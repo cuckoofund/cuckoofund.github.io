@@ -89,10 +89,54 @@
         background-color: rgba(255, 255, 255, 0.5); /* Set a semi-transparent white background */
         backdrop-filter: blur(5px); /* Apply blur filter for frosted glass effect */
       }
-      .frosted-glass-black {
-        background-color: rgba(0, 0, 0, 0.8); /* Set a semi-transparent white background */
+      .frosted-glass-leftbox {
+        background-color: rgba(247, 147, 26, 0.8); /* Set a semi-transparent white background */
         backdrop-filter: blur(5px); /* Apply blur filter for frosted glass effect */
         color: aliceblue;
+      }
+      .frosted-glass-rightbox {
+        background-color: rgba(255, 255, 255, 0.5); /* Set a semi-transparent white background */
+        backdrop-filter: blur(5px); /* Apply blur filter for frosted glass effect */
+        color: rgb(247, 147, 26);
+        border-color: rgb(247, 147, 26);
+        border-radius: 10px;
+      }
+      :root {
+        --bs-border-color: rgb(247, 147, 26);
+      }
+      .frosted-glass-main {
+        background-color: rgba(255, 255, 255, 0.5); /* Set a semi-transparent white background */
+        backdrop-filter: blur(5px); /* Apply blur filter for frosted glass effect */
+        
+      }
+      .btn-outline-custom {
+        color: rgb(247, 147, 26); /* 替换为您的所需颜色 */
+        border-color: rgb(247, 147, 26); /* 替换为您的所需边框颜色 */
+      }
+      .btn-outline-custom:hover {
+        color: aliceblue;
+        background-color: rgb(247, 147, 26);
+      }
+
+      .btn-buy {
+        color: aliceblue;
+        background-color: rgb(247, 147, 26);
+      }
+      .btn-buy:hover {
+        color: aliceblue;
+        background-color: rgba(247, 147, 26, 0.8);
+      }
+      
+      .btn-outline-leftbox {
+        color: aliceblue;
+        border-color: aliceblue;
+      }
+      .btn-outline-leftbox:hover {
+        color: rgb(247, 147, 26);
+        background-color: aliceblue;
+      }
+      a {
+        text-decoration: none;
       }
       
     </style>
@@ -110,40 +154,41 @@
       </a>
     </header>
 
-    <div class="p-5 mb-4  rounded-3  frosted-glass">
+    <div class="p-5 mb-4  rounded-3  frosted-glass-main">
       <div class="container-fluid py-5">
         <h1 class="display-5 fw-bold">What is $Pizza 🍕 </h1>
         <p class="col-md-8 fs-4">
 
           $Pizza is the greatest fair airdrop in the history of BRC20.  <br/>
-          By <a type="button" class="btn btn-link" href="https://x.com/unisat_wallet">@unisat_wallet</a> <br/>
+          By<a class="fs-4" href="https://x.com/unisat_wallet" style="color:black;"> <i class="fa-brands fa-x-twitter"></i> @unisat_wallet</a> <br/>
           <hr>
-          
           🎉 Pizza has now been fully distributed! 🍕
           <br>
           Thank you for your patience and support, and we hope you enjoy your $pizza. ❤
           <!-- <a href="https://unisat.io/pizza">https://unisat.io/pizza</a> -->
 
         </p>
-        <a href="https://unisat.io/market/brc20?tick=pizza" class="btn btn-primary btn-lg" type="button">Go to buy</a>
+        <a href="https://unisat.io/market/brc20?tick=pizza" class="btn btn-buy btn-lg" type="button">
+          <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Go to buy
+        </a>
       </div>
     </div>
 
     <div class="row align-items-md-stretch">
       <div class="col-md-6">
-        <div class="h-100 p-5 frosted-glass-black rounded-3">
+        <div class="h-100 p-5 frosted-glass-leftbox rounded-3">
           <h2>About Us</h2>
           <p>Our community is mainly dedicated to promoting $Pizza.</p>
-          <a href="https://x.com/pizzabtc_" class="btn btn-outline-light" type="button">
+          <a href="https://x.com/pizzabtc_" class="btn btn-outline-leftbox" type="button">
             <i class="fa-brands fa-x-twitter"></i> Follow
           </a>
         </div>
       </div>
       <div class="col-md-6">
-        <div class="h-100 p-5 frosted-glass border rounded-3">
+        <div class="h-100 p-5 frosted-glass-rightbox border rounded-3">
           <h2>Expanding the community</h2>
           <p>Let more people know about $Pizza.</p>
-          <a href="https://twitter.com/intent/tweet?url=Welcome to join our $Pizza community on X(Twitter): @pizzabtc_" class="btn btn-outline-secondary" type="button">
+          <a href="https://twitter.com/intent/tweet?url=Welcome to join our $Pizza community on X(Twitter): @pizzabtc_" class="btn btn-outline-custom" type="button">
             <i class="fa-brands fa-x-twitter"></i> Share
           </a>
         </div>
